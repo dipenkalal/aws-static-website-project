@@ -28,7 +28,7 @@ aws-static-website-project/
 ```
 
 ### 🔧 User Data Script Used
-See [`scripts/user-data.sh`](./scripts/user-data.sh) for the script that installs Apache and sets up the static website.
+See [`scripts/Instance run script.txt`](./scripts/Instance run script.txt) for the script that installs Apache and sets up the static website.
 
 ---
 
