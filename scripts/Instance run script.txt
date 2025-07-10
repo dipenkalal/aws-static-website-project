@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Update and install httpd
+sudo yum update -y
+sudo yum install -y httpd
+# Start and enable httpd service
+sudo systemctl start httpd
+sudo systemctl enable httpd
+# Set permissions for /var/www/html
+sudo chmod 777 -R /var/www/html
+# Create index.html with server hostname
+echo "<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D's Session</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
+        h1 { color: #333; }
+        p { font-size: 1.1em; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to D's Session</h1>
+    <p><strong>Server Name:</strong> $(hostname -f)</p>
+    <p><strong>Server IP:</strong> $(hostname -I | awk '{print $1}')</p>
+    <p><strong>Operating System:</strong> $(uname -s) $(uname -r)</p>
+</body>
+</html>" > /var/www/html/index.html
+sudo systemctl restart httpd
