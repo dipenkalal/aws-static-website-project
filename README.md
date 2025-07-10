@@ -24,7 +24,11 @@ aws-static-website-project/
 ├── screenshots/        # EC2, EBS, SSH, IAM user/role setup and Website preview screenshots
 ├── scripts/            # User data scripts or setup templates
 └── README.md           # This file
+
 ```
+
+### 🔧 User Data Script Used
+See [`scripts/user-data.sh`](./scripts/user-data.sh) for the script that installs Apache and sets up the static website.
 
 ---
 
