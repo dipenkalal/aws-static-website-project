@@ -29,10 +29,10 @@ This project demonstrates how to deploy a **static website on AWS** using the **
 
 | Step | Screenshot |
 |------|------------|
-| EC2 Instance Launch | `/screenshots/ec2-launch.png` |
-| EBS Volume Attachment | `/screenshots/attach-ebs.png` |
-| IAM Role Creation | `/screenshots/iam-role.png` |
-| Static Website Running | `/screenshots/site-success.png` |
+| EC2 Instance Launch | `screenshots/06 Launch success.png` |
+| EBS Volume Attachment | `screenshots/13 Instance EBS Attach.png` |
+| IAM Role Creation | `screenshots/18 IAM User Creation.png` |
+| Static Website Running | `screenshots/09 Instance access via public ip of instance.png` |
 
 ---
 
