@@ -12,20 +12,35 @@ sudo chmod 777 -R /var/www/html
 echo "<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D's Session</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
-        h1 { color: #333; }
-        p { font-size: 1.1em; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Dipen's EC2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding-top: 15%;
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      color: #ffd;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to D's Session</h1>
-    <p><strong>Server Name:</strong> $(hostname -f)</p>
-    <p><strong>Server IP:</strong> $(hostname -I | awk '{print $1}')</p>
-    <p><strong>Operating System:</strong> $(uname -s) $(uname -r)</p>
+  <h1>🚀 Welcome to Dipen's Project 1A!</h1>
+  <p>Your website is now live for <strong>Project 1A</strong></p>
+  <p>Stay tuned for more updates.</p>
 </body>
-</html>" > /var/www/html/index.html
+</html>
+" > /var/www/html/index.html
 sudo systemctl restart httpd
