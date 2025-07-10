@@ -21,10 +21,8 @@ This project demonstrates how to deploy a **static website** using AWS services 
 aws-static-website-project/
 │
 ├── docs/               # PDF Documentation of full deployment steps
-├── IAM/                # Screenshots related to IAM user/role setup
-├── screenshots/        # EC2, EBS, SSH, and Website preview screenshots
+├── screenshots/        # EC2, EBS, SSH, IAM user/role setup and Website preview screenshots
 ├── scripts/            # User data scripts or setup templates
-├── videoclips/         # Optional screen recordings or demo walkthroughs
 └── README.md           # This file
 ```
 
@@ -87,7 +85,7 @@ Hello! Welcome to My Static Website!
 
 ## 👨‍💻 Author
 
-Dipen Patel – *AWS Cloud Engineering – Module 1 Hands-on Project*
+Dipen Kala – *AWS Cloud Engineering – Module 1 Hands-on Project*
 
 ---
 
